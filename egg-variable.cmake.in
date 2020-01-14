@@ -1,0 +1,17 @@
+# Egg (Linux SDK) variable library configuration
+
+IF ( NOT EggVariableIncludePath OR
+     NOT EggVariableLibraryPath )
+
+  SET (	EggVariableIncludePath		"@CMAKE_INSTALL_FULL_INCLUDEDIR@"
+        CACHE		PATH "Egg (Linux SDK) variable includes"		)
+
+  SET (	EggVariableLibraryPath		"@CMAKE_INSTALL_FULL_LIBDIR@"
+        CACHE		PATH "Egg (Linux SDK) variable library"		)
+
+  SET (	EggVariableLibraryName		"@LibraryName@"
+        CACHE		PATH "Egg (Linux SDK) variable library name"	)
+
+ENDIF ()
+
+# End of file

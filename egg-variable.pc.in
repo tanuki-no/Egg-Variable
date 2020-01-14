@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: egg-variable
+Description: Egg (Linux SDK) variable library
+Version: @PROJECT_VERSION@
+URL: https://github.com/tanuki-no/Egg-Variable
+Libs: -L${libdir} -lvariable
+Cflags: -I${includedir}
