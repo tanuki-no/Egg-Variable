@@ -18,7 +18,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0 FATAL_ERROR)
 SET ( PROJECT_VERSION_MAJOR     0                                       )
 SET ( PROJECT_VERSION_MINOR     0                                       )
 SET ( PROJECT_VERSION_PATCH     1                                       )
-SET ( PROJECT_VERSION_TWEAK     0                                       )
+SET ( PROJECT_VERSION_TWEAK     1                                       )
 SET ( PROJECT_VERSION           ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}.${PROJECT_VERSION_TWEAK} )
 
 STRING( TIMESTAMP TODAY "%d/%m/%Y"					)
@@ -82,7 +82,7 @@ CONFIGURE_FILE(
 
 INSTALL(
   FILES       ${CMAKE_CURRENT_BINARY_DIR}/egg-variable.cmake
-  DESTINATION ${CMAKE_INSTALL_FULL_DATAROOTDIR}/cmake/Phoenix )
+  DESTINATION ${CMAKE_INSTALL_FULL_DATAROOTDIR}/cmake/${SDKName} )
 
 # PkgConfig
 IF (BUILD_PKGCONFIG)
